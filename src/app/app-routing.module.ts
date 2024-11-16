@@ -1,10 +1,18 @@
 import { NgModule } from '@angular/core';
-import { RouterModule, Routes } from '@angular/router';
+import { Routes, RouterModule } from '@angular/router';
+import { FaceSnapListComponent } from './face-snap-list/face-snap-list.component';
+import { LandingPageComponent } from './landing-page-component/landing-page-component.component';  
 
-const routes: Routes = [];
+
+const routes: Routes = [
+  { path: '', component: LandingPageComponent }, 
+  { path: 'facesnaps', component: FaceSnapListComponent } 
+
+   
+];
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
   exports: [RouterModule]
 })
-export class AppRoutingModule { }
+export class AppRoutingModule {}

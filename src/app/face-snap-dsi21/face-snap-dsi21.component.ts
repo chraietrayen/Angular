@@ -1,6 +1,6 @@
 import { Component, Input, input } from '@angular/core';
 import { facesnap } from '../models/face-snap.module';
-
+import { FaceSnapListComponent } from '../face-snap-list/face-snap-list.component';
 @Component({
   selector: 'app-face-snap-dsi21',
   templateUrl: './face-snap-dsi21.component.html',
@@ -14,6 +14,7 @@ export class FaceSnapDSI21Component {
   imageurl!:string;
   buttontext!:string;
  @Input()fs!:facesnap;
+ 
   
 
   ngOnInit(){

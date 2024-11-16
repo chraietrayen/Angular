@@ -1,0 +1,21 @@
+
+.landing-block {
+    text-align: center;
+    padding: 50px;
+  }
+  
+  .landing-block img {
+    width: 200px; 
+    margin-bottom: 20px;
+  }
+  
+  .landing-links a {
+    font-size: 20px;
+    text-decoration: none;
+    color: #007bff;
+  }
+  
+  .landing-links a:hover {
+    text-decoration: underline;
+  }
+  

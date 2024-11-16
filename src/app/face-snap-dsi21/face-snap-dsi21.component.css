@@ -1,47 +1,71 @@
 .face-snap-card {
-    box-sizing: border-box;
-    width: 50%;
-    margin: 20px auto;
-    padding: 10px 30px;
-    box-shadow: lightgrey 4px 4px 20px;
-    image {
-     width: 100%;
-     color: ;
-    }
-    h2 {
-     margin-bottom: 0;
-    }
-    p {
-     font-weight: 300;
-     font-size: 16px;
-    }
-    button {
-     background-color: transparent;
-     box-sizing: border-box;
-     padding: 5px 10px;
-     border: none;
-     box-shadow: lightgray 3px 3px 7px;
-     margin-right: 20px;
-     outline: none;
-     font-size: 14px;
-     font-weight: 500;
-     &:active {
-    transform: translate(1px, 1px);
-    box-shadow: lightgray 0 0 5px;
-     }
-    }
-    }
+  box-sizing: border-box;
+  width: 50%;
+  margin: 20px auto;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  background-color: #fff;
+  transition: transform 0.3s, box-shadow 0.3s;
+  overflow: hidden;
+}
+
+.face-snap-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.face-snap-card img {
+  width: 100%;
+  border-radius: 10px 10px 0 0;
+}
+
+.face-snap-card h2 {
+  margin: 15px 0 10px 0;
+  font-size: 24px;
+}
+
+.face-snap-card p {
+  font-weight: 300;
+  font-size: 16px;
+  color: #666;
+}
+
+.face-snap-card button {
+  background-color: #6200ea;
+  color: #fff;
+  box-sizing: border-box;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  box-shadow: 0 3px 7px rgba(0, 0, 0, 0.1);
+  margin-right: 20px;
+  outline: none;
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+.face-snap-card button:active {
+  transform: translate(1px, 1px);
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.face-snap-card button:hover {
+  background-color: #3700b3;
+}
+
 .snapped {
-    background-color: rgba(lightgreen, 0.4);
-    color: darkgreen;
-    button{
-      box-shadow: lightgreen 3px 3px 7px;
-      color: darkgreen;
-      
-      &:active {
-        box-shadow: lightgreen 0 0 5px;
-      }
-    }
-    
-  }
-  
+  background-color: rgba(144, 238, 144, 0.4);
+  color: darkgreen;
+}
+
+.snapped button {
+  box-shadow: 0 3px 7px rgba(144, 238, 144, 0.5);
+  color: darkgreen;
+}
+
+.snapped button:active {
+  box-shadow: 0 0 5px rgb(238, 144, 144);
+}
